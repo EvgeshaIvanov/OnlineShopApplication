@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="100dp"
+    android:layout_margin="4dp"
+    android:id="@+id/main_view"
+    android:background="@color/gray"
+    android:elevation="20dp"
+    tools:parentTag="com.google.android.material.card.MaterialCardView">
+
+    <View
+        android:clickable="true"
+        android:focusable="true"
+        android:id="@+id/select_color_view"
+        android:layout_width="71dp"
+        android:layout_height="71dp"
+        android:background="@drawable/select_default_item"
+        android:backgroundTint="@color/gray" />
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/computer_vector" />
+
+    <TextView
+        android:id="@+id/select_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:fontFamily="@font/mark_pro"
+        android:text="@string/computer"
+        android:textColor="@color/select_default_text_color"
+        android:textSize="12sp" />
+</merge>
