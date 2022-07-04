@@ -30,28 +30,4 @@ class HotSalesFragment : Fragment() {
         return binding.root
     }
 
-
-//    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-//        val repository = Repository()
-//        lifecycleScope.launch {
-//            val response = repository.hotSales()
-//            val adapter = ViewPagerAdapter()
-//            adapter.list = response.body()!!.homeStore
-//            binding.viewPager.adapter = adapter
-//            binding.viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback(){
-//                override fun onPageScrolled(
-//                    position: Int,
-//                    positionOffset: Float,
-//                    positionOffsetPixels: Int
-//                ) {
-//                    super.onPageScrolled(position, positionOffset, positionOffsetPixels)
-//                    Log.i("SwapRight", position.toString())
-//                    adapter.list[position].isNew = false
-//                }
-//
-//            })
-//            Log.i("ResponseFromBack", response.body()?.homeStore.toString())
-//            Log.i("ResponseFromBack", response.body()?.bestSeller.toString())
-//        }
-//    }
 }

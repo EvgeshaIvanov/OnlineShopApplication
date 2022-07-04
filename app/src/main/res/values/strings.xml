@@ -12,6 +12,9 @@
     <string name="hs_logo_text">New</string>
     <string name="discountPrice">$1,047</string>
     <string name="phone_name">Samsung Galaxy s20 Ultra</string>
+    <string name="select_category">Select Category</string>
+    <string name="hot_sales">Hot Sales</string>
+    <string name="best_seller">Best Seller</string>
     <string-array name="brand">
         <item>Samsung</item>
         <item>Xiaomi</item>

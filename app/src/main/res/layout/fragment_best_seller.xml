@@ -3,14 +3,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     tools:context=".presentation.BestSellerFragment">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_view_best_seller"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/mark_pro"
+        android:text="@string/best_seller"
+        android:textColor="@color/select_default_text_color"
+        android:textSize="25sp"
+        android:textStyle="bold" />
 
+    <androidx.recyclerview.widget.RecyclerView
+        tools:listitem="@layout/item_best_seller"
+        android:id="@+id/recycler_view_best_seller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>
