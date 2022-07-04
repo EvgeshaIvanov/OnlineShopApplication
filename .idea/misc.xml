@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/most1/AndroidStudioProjects/PhoneShopApp/app/src/main/res/drawable/background_view_pager_item.xml" value="0.3015" />
         <entry key="..\:/Users/most1/AndroidStudioProjects/PhoneShopApp/app/src/main/res/drawable/computer_vector.xml" value="0.241" />
         <entry key="..\:/Users/most1/AndroidStudioProjects/PhoneShopApp/app/src/main/res/drawable/ellipse_7.xml" value="0.241" />
         <entry key="..\:/Users/most1/AndroidStudioProjects/PhoneShopApp/app/src/main/res/drawable/ic_vector__2_.xml" value="0.241" />
@@ -11,9 +12,16 @@
         <entry key="..\:/Users/most1/AndroidStudioProjects/PhoneShopApp/app/src/main/res/drawable/select_first_item.xml" value="0.241" />
         <entry key="..\:/Users/most1/AndroidStudioProjects/PhoneShopApp/app/src/main/res/drawable/select_item_focus.xml" value="0.241" />
         <entry key="..\:/Users/most1/AndroidStudioProjects/PhoneShopApp/app/src/main/res/drawable/selected_text.xml" value="0.154" />
+        <entry key="..\:/Users/most1/AndroidStudioProjects/PhoneShopApp/app/src/main/res/layout-v26/item_view_pager.xml" value="0.3625" />
         <entry key="..\:/Users/most1/AndroidStudioProjects/PhoneShopApp/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/most1/AndroidStudioProjects/PhoneShopApp/app/src/main/res/layout/dropdown_item.xml" value="0.3625" />
+        <entry key="..\:/Users/most1/AndroidStudioProjects/PhoneShopApp/app/src/main/res/layout/fragment_best_seller.xml" value="0.5" />
+        <entry key="..\:/Users/most1/AndroidStudioProjects/PhoneShopApp/app/src/main/res/layout/fragment_filter_best_seller.xml" value="0.3625" />
+        <entry key="..\:/Users/most1/AndroidStudioProjects/PhoneShopApp/app/src/main/res/layout/fragment_hot_sales.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/most1/AndroidStudioProjects/PhoneShopApp/app/src/main/res/layout/fragment_select_category.xml" value="0.28822882288228824" />
+        <entry key="..\:/Users/most1/AndroidStudioProjects/PhoneShopApp/app/src/main/res/layout/item_best_seller.xml" value="0.9" />
         <entry key="..\:/Users/most1/AndroidStudioProjects/PhoneShopApp/app/src/main/res/layout/item_from_menu.xml" value="0.9" />
+        <entry key="..\:/Users/most1/AndroidStudioProjects/PhoneShopApp/app/src/main/res/layout/item_view_pager.xml" value="0.5" />
       </map>
     </option>
   </component>

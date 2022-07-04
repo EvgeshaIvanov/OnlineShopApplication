@@ -6,4 +6,21 @@
     <string name="computer">Computer</string>
     <string name="health">Health</string>
     <string name="books">Books</string>
+    <string name="button_buy_now">Buy now!</string>
+    <string name="hs_second_text">Súper. Mega. Rápido.</string>
+    <string name="hs_main_text">Iphone 12</string>
+    <string name="hs_logo_text">New</string>
+    <string name="discountPrice">$1,047</string>
+    <string name="phone_name">Samsung Galaxy s20 Ultra</string>
+    <string-array name="brand">
+        <item>Samsung</item>
+        <item>Xiaomi</item>
+        <item>Motorola</item>
+    </string-array>
+    <string-array name="price">
+        <item>$0 - $10000</item>
+    </string-array>
+    <string-array name="size">
+        <item>4.5 to 5.5 inches</item>
+    </string-array>
 </resources>
