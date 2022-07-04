@@ -1,4 +1,4 @@
-package com.example.phoneshopapp
+package com.example.phoneshopapp.presentation
 
 import android.content.res.ColorStateList
 import android.graphics.Color

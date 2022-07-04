@@ -1,4 +1,4 @@
-package com.example.phoneshopapp.network
+package com.example.phoneshopapp.domain.network
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

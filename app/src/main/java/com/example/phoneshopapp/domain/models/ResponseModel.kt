@@ -1,7 +1,5 @@
-package com.example.phoneshopapp.model
+package com.example.phoneshopapp.domain.models
 
-import com.example.phoneshopapp.model.BestSellerModel
-import com.example.phoneshopapp.model.HotSalesModel
 import com.google.gson.annotations.SerializedName
 
 data class ResponseModel(

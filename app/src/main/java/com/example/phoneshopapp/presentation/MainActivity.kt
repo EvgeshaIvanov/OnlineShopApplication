@@ -1,7 +1,8 @@
-package com.example.phoneshopapp
+package com.example.phoneshopapp.presentation
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.phoneshopapp.R
 import com.example.phoneshopapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

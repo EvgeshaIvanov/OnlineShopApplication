@@ -1,13 +1,12 @@
-package com.example.phoneshopapp
+package com.example.phoneshopapp.presentation
 
-import android.annotation.SuppressLint
 import android.content.Context
 import android.content.res.ColorStateList
 import android.graphics.Color
 import android.util.AttributeSet
 import android.view.LayoutInflater
-import android.widget.HorizontalScrollView
 import androidx.cardview.widget.CardView
+import com.example.phoneshopapp.R
 import com.example.phoneshopapp.databinding.ItemFromMenuBinding
 
 

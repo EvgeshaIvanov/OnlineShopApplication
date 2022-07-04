@@ -1,13 +1,12 @@
-package com.example.phoneshopapp
+package com.example.phoneshopapp.presentation
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import com.example.phoneshopapp.databinding.ItemBestSellerBinding
-import com.example.phoneshopapp.model.BestSellerModel
+import com.example.phoneshopapp.domain.models.BestSellerModel
 
 class BestSellerAdapter : RecyclerView.Adapter<BestSellerViewHolder>() {
 
@@ -31,7 +30,7 @@ class BestSellerAdapter : RecyclerView.Adapter<BestSellerViewHolder>() {
             priceWithoutDiscount.text = "\$${item.priceWithoutDiscount.toString()}"
             discountPrice.text = "\$${item.discountPrice.toString()}"
             phoneName.text = item.title
-          }
+        }
     }
 
     override fun getItemCount() = list.size
@@ -39,6 +38,4 @@ class BestSellerAdapter : RecyclerView.Adapter<BestSellerViewHolder>() {
 }
 
 class BestSellerViewHolder(val binding: ItemBestSellerBinding) :
-    RecyclerView.ViewHolder(binding.root) {
-
-}
+    RecyclerView.ViewHolder(binding.root)

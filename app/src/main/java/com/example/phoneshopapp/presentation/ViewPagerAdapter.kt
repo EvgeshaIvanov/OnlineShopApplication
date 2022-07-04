@@ -1,4 +1,4 @@
-package com.example.phoneshopapp
+package com.example.phoneshopapp.presentation
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import com.example.phoneshopapp.databinding.ItemHotSalesViewPagerBinding
-import com.example.phoneshopapp.model.HotSalesModel
+import com.example.phoneshopapp.domain.models.HotSalesModel
 
 
 class ViewPagerAdapter : RecyclerView.Adapter<ViewPagerViewHolder>() {

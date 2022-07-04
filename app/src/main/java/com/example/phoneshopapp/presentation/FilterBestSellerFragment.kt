@@ -1,4 +1,4 @@
-package com.example.phoneshopapp
+package com.example.phoneshopapp.presentation
 
 import android.os.Bundle
 import android.util.Log
@@ -8,7 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import androidx.lifecycle.ViewModelProvider
-import com.example.phoneshopapp.databinding.FragmentBestSellerBinding
+import com.example.phoneshopapp.R
 import com.example.phoneshopapp.databinding.FragmentFilterBestSellerBinding
 
 class FilterBestSellerFragment : Fragment() {
