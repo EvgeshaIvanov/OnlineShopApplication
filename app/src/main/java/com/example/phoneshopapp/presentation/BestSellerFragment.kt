@@ -19,28 +19,28 @@ class BestSellerFragment : Fragment() {
 
     private lateinit var viewModel: MainViewModel
 
-    @SuppressLint("NotifyDataSetChanged")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentBestSellerBinding.inflate(inflater, container, false)
+        initRecyclerView()
+        initViewModel()
+        return binding.root
+    }
 
+    private fun initViewModel() {
+        viewModel = ViewModelProvider(this)[MainViewModel::class.java]
+        viewModel.bestSellerPhones.observe(viewLifecycleOwner) { phones ->
+            phoneAdapter.list = phones
+        }
+    }
 
+    private fun initRecyclerView() {
         phoneAdapter = BestSellerAdapter()
         binding.recyclerViewBestSeller.apply {
             layoutManager = GridLayoutManager(context, 2)
             adapter = phoneAdapter
         }
-        viewModel = ViewModelProvider(this)[MainViewModel::class.java]
-
-
-        viewModel.bestSellerPhones.observe(viewLifecycleOwner) { phones ->
-            phoneAdapter.list = phones
-        }
-
-
-
-        return binding.root
     }
 }

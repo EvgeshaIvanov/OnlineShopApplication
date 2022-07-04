@@ -23,12 +23,13 @@ class BestSellerAdapter : RecyclerView.Adapter<BestSellerViewHolder>() {
         return BestSellerViewHolder(binding)
     }
 
+    @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: BestSellerViewHolder, position: Int) {
         val item = list[position]
         with(holder.binding) {
             bestSellerImage.load(item.picture)
-            priceWithoutDiscount.text = "\$${item.priceWithoutDiscount.toString()}"
-            discountPrice.text = "\$${item.discountPrice.toString()}"
+            priceWithoutDiscount.text = "\$${item.priceWithoutDiscount}"
+            discountPrice.text = "\$${item.discountPrice}"
             phoneName.text = item.title
         }
     }
@@ -37,5 +38,4 @@ class BestSellerAdapter : RecyclerView.Adapter<BestSellerViewHolder>() {
 
 }
 
-class BestSellerViewHolder(val binding: ItemBestSellerBinding) :
-    RecyclerView.ViewHolder(binding.root)
+

@@ -22,6 +22,11 @@ class FilterBestSellerFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentFilterBestSellerBinding.inflate(inflater, container, false)
+        setupDropDownMenu()
+        return binding.root
+    }
+
+    private fun setupDropDownMenu() {
         val brand = resources.getStringArray(R.array.brand)
         val brandAdapter = ArrayAdapter(requireContext(), R.layout.dropdown_item, brand)
         binding.brandDropdownMenu.setAdapter(brandAdapter)
@@ -43,7 +48,6 @@ class FilterBestSellerFragment : Fragment() {
                 .detach(this)
                 .commit()
         }
-        return binding.root
     }
 
 
