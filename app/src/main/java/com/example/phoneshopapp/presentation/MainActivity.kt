@@ -18,25 +18,5 @@ class MainActivity : AppCompatActivity() {
             supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         val navController = navHostFragment.navController
 
-//        binding.filterSettings.setOnClickListener {
-//            supportFragmentManager
-//                .beginTransaction()
-//                .replace(R.id.container_filter, FilterBestSellerFragment())
-//                .commit()
-//        }
-//        supportFragmentManager
-//            .beginTransaction()
-//            .add(R.id.container_horizontal_menu, SelectCategoryFragment())
-//            .commit()
-//        supportFragmentManager
-//            .beginTransaction()
-//            .add(R.id.container_hot_sales, HotSalesFragment())
-//            .commit()
-//        supportFragmentManager
-//            .beginTransaction()
-//            .replace(R.id.container_best_sellers, BestSellerFragment())
-//            .commit()
-
-
     }
 }

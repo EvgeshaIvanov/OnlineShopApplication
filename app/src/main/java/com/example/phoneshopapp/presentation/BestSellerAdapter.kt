@@ -10,6 +10,8 @@ import com.example.phoneshopapp.domain.models.BestSellerModel
 
 class BestSellerAdapter : RecyclerView.Adapter<BestSellerViewHolder>() {
 
+    var onPhoneClickListener: ((BestSellerModel) -> Unit)? = null
+
     var list = emptyList<BestSellerModel>()
         @SuppressLint("NotifyDataSetChanged")
         set(value) {
@@ -31,6 +33,9 @@ class BestSellerAdapter : RecyclerView.Adapter<BestSellerViewHolder>() {
             priceWithoutDiscount.text = "\$${item.priceWithoutDiscount}"
             discountPrice.text = "\$${item.discountPrice}"
             phoneName.text = item.title
+            cardPhone.setOnClickListener {
+                onPhoneClickListener?.invoke(item)
+            }
         }
     }
 

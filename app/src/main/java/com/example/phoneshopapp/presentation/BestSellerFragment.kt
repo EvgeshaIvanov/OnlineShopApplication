@@ -7,7 +7,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
+import com.example.phoneshopapp.R
 import com.example.phoneshopapp.databinding.FragmentBestSellerBinding
 
 
@@ -41,6 +43,9 @@ class BestSellerFragment : Fragment() {
         binding.recyclerViewBestSeller.apply {
             layoutManager = GridLayoutManager(context, 2)
             adapter = phoneAdapter
+        }
+        phoneAdapter.onPhoneClickListener = {
+            findNavController().navigate(R.id.action_mainScreenFragment_to_blankFragment)
         }
     }
 }
