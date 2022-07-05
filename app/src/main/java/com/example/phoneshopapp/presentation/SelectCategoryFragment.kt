@@ -3,11 +3,15 @@ package com.example.phoneshopapp.presentation
 import android.content.res.ColorStateList
 import android.graphics.Color
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.cardview.widget.CardView
+import androidx.navigation.Navigation
+import androidx.navigation.fragment.findNavController
+import com.example.phoneshopapp.R
 import com.example.phoneshopapp.databinding.FragmentSelectCategoryBinding
 import com.google.android.material.card.MaterialCardView
 
@@ -22,6 +26,12 @@ class SelectCategoryFragment : Fragment() {
     ): View {
         binding = FragmentSelectCategoryBinding.inflate(inflater, container, false)
         binding.selectPhonesCardView.select()
+        binding.selectPhonesCardView.setOnClickListener {
+
+            Log.i("CLICK", "DWADW")
+
+            //findNavController().navigate(R.id.action_selectCategoryFragment_to_blankFragment2, null)
+        }
         initComputerCardView()
         initPhonesCardView()
         initBookCardView()
@@ -31,7 +41,7 @@ class SelectCategoryFragment : Fragment() {
         return binding.root
     }
 
-    fun initComputerCardView(){
+    fun initComputerCardView() {
         with(binding) {
             selectComputersCardView.setOnClickListener {
                 selectComputersCardView.select()
@@ -42,9 +52,17 @@ class SelectCategoryFragment : Fragment() {
             }
         }
     }
-    fun initPhonesCardView(){
+
+    fun initPhonesCardView() {
         with(binding) {
             selectPhonesCardView.setOnClickListener {
+                findNavController().navigate(R.id.action_mainScreenFragment_to_blankFragment)
+//                if(findNavController().currentDestination?.id==R.id.selectCategoryFragment){
+//                    findNavController().navigate(R.id.action_mainScreenFragment_to_blankFragment)
+//                }
+
+
+                Log.i("CLICK", "DWADW")
                 selectComputersCardView.unselect()
                 selectPhonesCardView.select()
                 selectHealthCardView.unselect()
@@ -53,7 +71,8 @@ class SelectCategoryFragment : Fragment() {
             }
         }
     }
-    fun initHealthCardView(){
+
+    fun initHealthCardView() {
         with(binding) {
             selectHealthCardView.setOnClickListener {
                 selectComputersCardView.unselect()
@@ -64,7 +83,8 @@ class SelectCategoryFragment : Fragment() {
             }
         }
     }
-    fun initBookCardView(){
+
+    fun initBookCardView() {
         with(binding) {
             selectBooksCardView.setOnClickListener {
                 selectComputersCardView.unselect()
@@ -75,7 +95,8 @@ class SelectCategoryFragment : Fragment() {
             }
         }
     }
-    fun initExampleCardView(){
+
+    fun initExampleCardView() {
         with(binding) {
             selectExampleCardView.setOnClickListener {
                 selectComputersCardView.unselect()
