@@ -15,6 +15,8 @@
     <string name="select_category">Select Category</string>
     <string name="hot_sales">Hot Sales</string>
     <string name="best_seller">Best Seller</string>
+    <string name="product_details">Product Details</string>
+    <string name="galaxy_note_20_ultra">Galaxy Note 20 Ultra</string>
     <string-array name="brand">
         <item>Samsung</item>
         <item>Xiaomi</item>

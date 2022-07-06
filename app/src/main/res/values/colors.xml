@@ -11,4 +11,6 @@
     <color name="select_default_text_color">#010035</color>
     <color name="gray">#E5E5E5</color>
     <color name="dark_gray">#CCCCCC</color>
+    <color name="new_dark_gray">#B7B7B7</color>
+    <color name="gold">#FFD700</color>
 </resources>

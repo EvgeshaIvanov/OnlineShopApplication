@@ -45,7 +45,7 @@ class BestSellerFragment : Fragment() {
             adapter = phoneAdapter
         }
         phoneAdapter.onPhoneClickListener = {
-            findNavController().navigate(R.id.action_mainScreenFragment_to_blankFragment)
+            findNavController().navigate(R.id.action_mainScreenFragment_to_productInfoFragment)
         }
     }
 }
