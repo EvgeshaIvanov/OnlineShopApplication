@@ -1,4 +1,4 @@
-package com.example.phoneshopapp.mainScreen.presentation
+package com.example.phoneshopapp.mainScreen.presentation.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -19,10 +19,11 @@ class MainScreenFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentMainScreenBinding.inflate(inflater, container, false)
-
-        initFragment(R.id.container_horizontal_menu, SelectCategoryFragment())
-        initFragment(R.id.container_hot_sales, HotSalesFragment())
-        initFragment(R.id.container_best_sellers, BestSellerFragment())
+        if (savedInstanceState == null) {
+            initFragment(R.id.container_horizontal_menu, SelectCategoryFragment())
+            initFragment(R.id.container_hot_sales, HotSalesFragment())
+            initFragment(R.id.container_best_sellers, BestSellerFragment())
+        }
         binding.filterSettings.setOnClickListener {
             initFragment(R.id.container_filter, FilterBestSellerFragment())
             binding.scrollView.postDelayed({

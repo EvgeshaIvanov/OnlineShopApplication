@@ -1,15 +1,15 @@
-package com.example.phoneshopapp.mainScreen.presentation
+package com.example.phoneshopapp.mainScreen.presentation.fragments
 
 import android.os.Bundle
-import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.phoneshopapp.R
 import com.example.phoneshopapp.databinding.FragmentFilterBestSellerBinding
+import com.example.phoneshopapp.mainScreen.presentation.MainViewModel
 
 class FilterBestSellerFragment : Fragment() {
 

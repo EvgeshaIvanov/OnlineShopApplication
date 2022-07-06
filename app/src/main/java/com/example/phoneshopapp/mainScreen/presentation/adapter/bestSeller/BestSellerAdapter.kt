@@ -1,8 +1,7 @@
-package com.example.phoneshopapp.mainScreen.presentation
+package com.example.phoneshopapp.mainScreen.presentation.adapter.bestSeller
 
 import android.annotation.SuppressLint
 import android.graphics.Paint
-import android.graphics.PaintFlagsDrawFilter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView

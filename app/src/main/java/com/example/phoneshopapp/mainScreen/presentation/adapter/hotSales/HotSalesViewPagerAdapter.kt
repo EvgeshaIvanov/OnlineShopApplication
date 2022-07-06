@@ -1,4 +1,4 @@
-package com.example.phoneshopapp.mainScreen.presentation
+package com.example.phoneshopapp.mainScreen.presentation.adapter.hotSales
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
@@ -10,7 +10,7 @@ import com.example.phoneshopapp.databinding.ItemHotSalesViewPagerBinding
 import com.example.phoneshopapp.mainScreen.domain.models.HotSalesModel
 
 
-class ViewPagerAdapter : RecyclerView.Adapter<ViewPagerViewHolder>() {
+class HotSalesViewPagerAdapter : RecyclerView.Adapter<HotSalesViewPagerViewHolder>() {
 
     var list = emptyList<HotSalesModel>()
         @SuppressLint("NotifyDataSetChanged")
@@ -19,16 +19,16 @@ class ViewPagerAdapter : RecyclerView.Adapter<ViewPagerViewHolder>() {
             notifyDataSetChanged()
         }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewPagerViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HotSalesViewPagerViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
         val binding = ItemHotSalesViewPagerBinding.inflate(layoutInflater, parent, false)
-        return ViewPagerViewHolder(binding)
+        return HotSalesViewPagerViewHolder(binding)
     }
 
 
-    override fun onBindViewHolder(holder: ViewPagerViewHolder, position: Int) {
+    override fun onBindViewHolder(holderHotSales: HotSalesViewPagerViewHolder, position: Int) {
         val sale = list[position]
-        with(holder.binding) {
+        with(holderHotSales.binding) {
             hsMainText.text = sale.title
             hsSecondText.text = sale.subtitle
             hsImage.load(sale.picture) {

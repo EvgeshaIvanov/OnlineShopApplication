@@ -7,14 +7,13 @@
     android:layout_height="wrap_content"
     android:background="@color/gray"
     android:fillViewport="true"
-    android:scrollbars="none"
     android:orientation="horizontal"
-    tools:context=".mainScreen.presentation.SelectCategoryFragment">
+    android:scrollbars="none"
+    tools:context=".mainScreen.presentation.fragments.SelectCategoryFragment">
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-
         android:orientation="horizontal">
 
         <LinearLayout
@@ -65,7 +64,6 @@
                 android:elevation="20dp"
                 android:focusable="true"
                 app:cardCornerRadius="35dp">
-
 
                 <ImageView
                     android:layout_width="wrap_content"

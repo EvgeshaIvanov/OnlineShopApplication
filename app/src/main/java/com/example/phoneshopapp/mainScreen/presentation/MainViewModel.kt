@@ -1,6 +1,5 @@
 package com.example.phoneshopapp.mainScreen.presentation
 
-import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -36,7 +35,6 @@ class MainViewModel : ViewModel() {
     private fun hotSalesPhone() {
         viewModelScope.launch {
             val list = hotSalesUseCase.execute()
-            Log.i("TAG", list.toString())
             hotSalesPhones.postValue(list)
         }
     }

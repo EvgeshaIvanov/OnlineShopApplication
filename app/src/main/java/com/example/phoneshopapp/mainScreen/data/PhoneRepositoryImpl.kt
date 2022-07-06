@@ -2,8 +2,8 @@ package com.example.phoneshopapp.mainScreen.data
 
 import com.example.phoneshopapp.mainScreen.domain.models.BestSellerModel
 import com.example.phoneshopapp.mainScreen.domain.models.HotSalesModel
-import com.example.phoneshopapp.mainScreen.domain.repository.PhonesRepository
 import com.example.phoneshopapp.mainScreen.domain.network.RetrofitInstance
+import com.example.phoneshopapp.mainScreen.domain.repository.PhonesRepository
 
 class PhoneRepositoryImpl : PhonesRepository {
 

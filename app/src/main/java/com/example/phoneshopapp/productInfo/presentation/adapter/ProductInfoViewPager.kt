@@ -1,4 +1,4 @@
-package com.example.phoneshopapp.productInfo.presentation
+package com.example.phoneshopapp.productInfo.presentation.adapter
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
@@ -31,5 +31,4 @@ class ProductInfoViewPager : RecyclerView.Adapter<ProductInfoViewHolder>() {
 
 }
 
-class ProductInfoViewHolder(val binding: ItemProductDetailsViewPagerBinding) :
-    RecyclerView.ViewHolder(binding.root)
+

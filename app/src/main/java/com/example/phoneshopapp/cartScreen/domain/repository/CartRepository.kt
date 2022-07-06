@@ -1,9 +1,8 @@
 package com.example.phoneshopapp.cartScreen.domain.repository
 
-import com.example.phoneshopapp.cartScreen.domain.model.BasketModel
-import com.example.phoneshopapp.cartScreen.domain.model.CartModel
+import com.example.phoneshopapp.cartScreen.domain.model.ResponseCartModel
 
 interface CartRepository {
 
-    suspend fun getCartInfo(): CartModel
+    suspend fun getCartInfo(): ResponseCartModel
 }

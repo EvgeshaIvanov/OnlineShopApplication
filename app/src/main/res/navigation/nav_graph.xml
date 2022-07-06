@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/mainScreenFragment"
-        android:name="com.example.phoneshopapp.mainScreen.presentation.MainScreenFragment"
+        android:name="com.example.phoneshopapp.mainScreen.presentation.fragments.MainScreenFragment"
         android:label="fragment_main_screen"
-        tools:layout="@layout/fragment_main_screen" >
+        tools:layout="@layout/fragment_main_screen">
         <action
             android:id="@+id/action_mainScreenFragment_to_productInfoFragment"
             app:destination="@id/productInfoFragment"
@@ -20,7 +20,7 @@
     <fragment
         android:id="@+id/productInfoFragment"
         android:name="com.example.phoneshopapp.productInfo.presentation.ProductInfoFragment"
-        android:label="ProductInfoFragment" >
+        android:label="ProductInfoFragment">
         <action
             android:id="@+id/action_productInfoFragment_to_cartFragment"
             app:destination="@id/cartFragment" />

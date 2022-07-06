@@ -1,18 +1,16 @@
 package com.example.phoneshopapp.productInfo.presentation
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.view.ViewCompat
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
-import androidx.viewpager2.widget.MarginPageTransformer
-import androidx.viewpager2.widget.ViewPager2
 import com.example.phoneshopapp.R
 import com.example.phoneshopapp.databinding.FragmentProductInfoBinding
+import com.example.phoneshopapp.productInfo.presentation.adapter.ProductInfoViewPager
 
 class ProductInfoFragment : Fragment() {
 

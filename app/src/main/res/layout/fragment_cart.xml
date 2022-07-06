@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -25,7 +24,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="32dp"
-        android:text="My Cart"
+        android:text="@string/my_cart"
         android:textColor="@color/select_default_text_color"
         android:textSize="35sp"
         android:textStyle="bold" />
@@ -74,7 +73,7 @@
                         android:layout_marginStart="55dp"
                         android:layout_marginTop="16dp"
                         android:fontFamily="@font/mark_pro"
-                        android:text="Total"
+                        android:text="@string/total"
                         android:textColor="@color/white"
                         android:textSize="15sp" />
 
@@ -84,7 +83,7 @@
                         android:layout_marginStart="55dp"
                         android:layout_marginTop="48dp"
                         android:fontFamily="@font/mark_pro"
-                        android:text="Delivery"
+                        android:text="@string/delivery"
                         android:textColor="@color/white"
                         android:textSize="15sp" />
                 </FrameLayout>
@@ -105,7 +104,7 @@
                         android:layout_marginTop="16dp"
                         android:layout_marginEnd="55dp"
                         android:fontFamily="@font/mark_pro"
-                        android:text="$6,000 us"
+                        android:text="@string/_6_000_us"
                         android:textColor="@color/white"
                         android:textSize="15sp"
                         android:textStyle="bold" />
@@ -117,7 +116,7 @@
                         android:layout_marginTop="48dp"
                         android:layout_marginEnd="55dp"
                         android:fontFamily="@font/mark_pro"
-                        android:text="Free"
+                        android:text="@string/free"
                         android:textColor="@color/white"
                         android:textSize="15sp"
                         android:textStyle="bold" />
@@ -141,7 +140,7 @@
                 android:background="@drawable/custom_default_button"
                 android:backgroundTint="@color/orange"
                 android:fontFamily="@font/mark_pro"
-                android:text="Checkout"
+                android:text="@string/checkout"
                 android:textAllCaps="false"
                 android:textSize="20sp"
                 android:textStyle="bold" />

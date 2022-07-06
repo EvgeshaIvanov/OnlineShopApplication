@@ -1,4 +1,4 @@
-package com.example.phoneshopapp.cartScreen.presentation
+package com.example.phoneshopapp.cartScreen.presentation.adapter
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
@@ -23,18 +23,18 @@ class CartAdapter : RecyclerView.Adapter<CartViewHolder>() {
         return CartViewHolder(binding)
     }
 
+    @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: CartViewHolder, position: Int) {
         val item = cartList[position]
         with(holder.binding) {
             phoneImage.load(item.image)
             phoneName.text = item.name
-            costPhone.text = "\$${item.price.toString()}"
+            costPhone.text = "\$${item.price}"
         }
     }
 
     override fun getItemCount() = cartList.size
 
-
 }
 
-class CartViewHolder(val binding: ItemCartBinding) : RecyclerView.ViewHolder(binding.root)
+

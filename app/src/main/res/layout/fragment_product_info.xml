@@ -126,17 +126,17 @@
                 <com.google.android.material.tabs.TabItem
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Shop" />
+                    android:text="@string/shop" />
 
                 <com.google.android.material.tabs.TabItem
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Details" />
+                    android:text="@string/details" />
 
                 <com.google.android.material.tabs.TabItem
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Features" />
+                    android:text="@string/features" />
             </com.google.android.material.tabs.TabLayout>
 
             <LinearLayout
@@ -182,7 +182,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0.25"
                     android:gravity="center"
-                    android:text="Exynos 990"
+                    android:text="@string/exynos_990"
                     android:textColor="@color/new_dark_gray"
                     android:textSize="11sp" />
 
@@ -191,7 +191,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
                     android:layout_weight="0.25"
-                    android:text="108 + 12 mp"
+                    android:text="@string/_108_12_mp"
                     android:textColor="@color/new_dark_gray"
                     android:textSize="11sp" />
 
@@ -199,7 +199,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.30"
-                    android:text="8 GB"
+                    android:text="@string/_8_gb"
                     android:textColor="@color/new_dark_gray"
                     android:textSize="11sp" />
 
@@ -208,7 +208,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
                     android:layout_weight="0.10"
-                    android:text="256 GB"
+                    android:text="@string/_256_gb"
                     android:textColor="@color/new_dark_gray"
                     android:textSize="11sp" />
             </LinearLayout>
@@ -219,7 +219,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:fontFamily="@font/mark_pro"
-                android:text="Select color and capacity"
+                android:text="@string/select_color_and_capacity"
                 android:textColor="@color/select_default_text_color"
                 android:textSize="16sp"
                 android:textStyle="bold" />
@@ -254,7 +254,7 @@
                     android:src="@drawable/rectangle_blue" />
 
                 <ImageView
-                    android:layout_width="1dp"
+                    android:layout_width="0dp"
                     android:layout_height="1dp"
                     android:layout_weight="1" />
 
@@ -262,7 +262,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/orange"
-                    android:text="128GB" />
+                    android:text="@string/_128gb" />
 
                 <Button
                     android:layout_width="wrap_content"
@@ -271,7 +271,7 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginEnd="16dp"
                     android:backgroundTint="@color/white"
-                    android:text="256gb"
+                    android:text="@string/_256gb"
                     android:textColor="@color/new_dark_gray" />
             </LinearLayout>
 
@@ -284,7 +284,7 @@
                 android:layout_marginBottom="8dp"
                 android:backgroundTint="@color/orange"
                 android:fontFamily="@font/mark_pro"
-                android:text="Add to Cart $1,500.00"
+                android:text="@string/add_to_cart_1_500_00"
                 android:textAllCaps="false"
                 android:textSize="20sp"
                 android:textStyle="bold" />

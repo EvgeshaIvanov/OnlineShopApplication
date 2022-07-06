@@ -1,15 +1,17 @@
-package com.example.phoneshopapp.mainScreen.presentation
+package com.example.phoneshopapp.mainScreen.presentation.fragments
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.phoneshopapp.R
 import com.example.phoneshopapp.databinding.FragmentBestSellerBinding
+import com.example.phoneshopapp.mainScreen.presentation.MainViewModel
+import com.example.phoneshopapp.mainScreen.presentation.adapter.bestSeller.BestSellerAdapter
 
 
 class BestSellerFragment : Fragment() {

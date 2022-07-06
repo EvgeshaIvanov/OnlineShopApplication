@@ -2,7 +2,7 @@ package com.example.phoneshopapp.cartScreen.domain.model
 
 import com.google.gson.annotations.SerializedName
 
-data class CartModel(
+data class ResponseCartModel(
     @SerializedName("id")
     val id: Int,
     @SerializedName("basket")

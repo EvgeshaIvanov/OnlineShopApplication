@@ -1,17 +1,12 @@
-package com.example.phoneshopapp.mainScreen.presentation
+package com.example.phoneshopapp.mainScreen.presentation.fragments
 
 import android.content.res.ColorStateList
 import android.graphics.Color
 import android.os.Bundle
-import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.cardview.widget.CardView
-import androidx.navigation.Navigation
-import androidx.navigation.fragment.findNavController
-import com.example.phoneshopapp.R
+import androidx.fragment.app.Fragment
 import com.example.phoneshopapp.databinding.FragmentSelectCategoryBinding
 import com.google.android.material.card.MaterialCardView
 
@@ -26,12 +21,6 @@ class SelectCategoryFragment : Fragment() {
     ): View {
         binding = FragmentSelectCategoryBinding.inflate(inflater, container, false)
         binding.selectPhonesCardView.select()
-        binding.selectPhonesCardView.setOnClickListener {
-
-            Log.i("CLICK", "DWADW")
-
-            //findNavController().navigate(R.id.action_selectCategoryFragment_to_blankFragment2, null)
-        }
         initComputerCardView()
         initPhonesCardView()
         initBookCardView()
@@ -41,7 +30,7 @@ class SelectCategoryFragment : Fragment() {
         return binding.root
     }
 
-    fun initComputerCardView() {
+    private fun initComputerCardView() {
         with(binding) {
             selectComputersCardView.setOnClickListener {
                 selectComputersCardView.select()
@@ -53,16 +42,9 @@ class SelectCategoryFragment : Fragment() {
         }
     }
 
-    fun initPhonesCardView() {
+    private fun initPhonesCardView() {
         with(binding) {
             selectPhonesCardView.setOnClickListener {
-//                findNavController().navigate(R.id.action_mainScreenFragment_to_blankFragment)
-////                if(findNavController().currentDestination?.id==R.id.selectCategoryFragment){
-////                    findNavController().navigate(R.id.action_mainScreenFragment_to_blankFragment)
-////                }
-
-
-                Log.i("CLICK", "DWADW")
                 selectComputersCardView.unselect()
                 selectPhonesCardView.select()
                 selectHealthCardView.unselect()
@@ -72,7 +54,7 @@ class SelectCategoryFragment : Fragment() {
         }
     }
 
-    fun initHealthCardView() {
+    private fun initHealthCardView() {
         with(binding) {
             selectHealthCardView.setOnClickListener {
                 selectComputersCardView.unselect()
@@ -84,7 +66,7 @@ class SelectCategoryFragment : Fragment() {
         }
     }
 
-    fun initBookCardView() {
+    private fun initBookCardView() {
         with(binding) {
             selectBooksCardView.setOnClickListener {
                 selectComputersCardView.unselect()
@@ -96,7 +78,7 @@ class SelectCategoryFragment : Fragment() {
         }
     }
 
-    fun initExampleCardView() {
+    private fun initExampleCardView() {
         with(binding) {
             selectExampleCardView.setOnClickListener {
                 selectComputersCardView.unselect()
@@ -108,11 +90,11 @@ class SelectCategoryFragment : Fragment() {
         }
     }
 
-    fun MaterialCardView.select() {
+    private fun MaterialCardView.select() {
         this.backgroundTintList = ColorStateList.valueOf(Color.parseColor("#FF6E4E"))
     }
 
-    fun MaterialCardView.unselect() {
+    private fun MaterialCardView.unselect() {
         this.backgroundTintList = ColorStateList.valueOf(Color.WHITE)
     }
 
