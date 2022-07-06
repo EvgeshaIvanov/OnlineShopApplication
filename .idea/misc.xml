@@ -3,9 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/most1/AndroidStudioProjects/OnlineShopApplication/app/src/main/res/drawable/custom_card.xml" value="0.3135" />
         <entry key="..\:/Users/most1/AndroidStudioProjects/OnlineShopApplication/app/src/main/res/drawable/custom_default_button.xml" value="0.3135" />
         <entry key="..\:/Users/most1/AndroidStudioProjects/OnlineShopApplication/app/src/main/res/drawable/custom_favorite_button.xml" value="0.3135" />
+        <entry key="..\:/Users/most1/AndroidStudioProjects/OnlineShopApplication/app/src/main/res/layout/fragment_cart.xml" value="0.33" />
         <entry key="..\:/Users/most1/AndroidStudioProjects/OnlineShopApplication/app/src/main/res/layout/fragment_product_info.xml" value="0.5" />
+        <entry key="..\:/Users/most1/AndroidStudioProjects/OnlineShopApplication/app/src/main/res/layout/item_cart.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/most1/AndroidStudioProjects/OnlineShopApplication/app/src/main/res/layout/item_product_details_view_pager.xml" value="0.25277777777777777" />
         <entry key="..\:/Users/most1/AndroidStudioProjects/PhoneShopApp/app/src/main/res/drawable/background_view_pager_item.xml" value="0.3015" />
         <entry key="..\:/Users/most1/AndroidStudioProjects/PhoneShopApp/app/src/main/res/drawable/computer_vector.xml" value="0.241" />

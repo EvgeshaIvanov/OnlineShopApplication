@@ -7,10 +7,12 @@
     android:orientation="vertical">
 
     <ImageButton
-        android:id="@+id/close_filter_button"
+        android:id="@+id/back_button"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginStart="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_default_button"
         android:backgroundTint="@color/select_default_text_color"
         android:gravity="center"
         android:src="@drawable/back_arrow"
@@ -20,7 +22,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="32dp"
         android:text="My Cart"
@@ -42,8 +44,13 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recycler_view"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="0.10" />
 
             <ImageView
                 android:layout_width="match_parent"
@@ -131,6 +138,7 @@
                 android:layout_marginStart="40dp"
                 android:layout_marginEnd="40dp"
                 android:layout_marginBottom="40dp"
+                android:background="@drawable/custom_default_button"
                 android:backgroundTint="@color/orange"
                 android:fontFamily="@font/mark_pro"
                 android:text="Checkout"

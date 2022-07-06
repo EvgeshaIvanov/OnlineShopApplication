@@ -36,7 +36,9 @@ class ProductInfoFragment : Fragment() {
         binding.cartButton.setOnClickListener {
             findNavController().navigate(R.id.action_productInfoFragment_to_cartFragment)
         }
-
+        binding.backButton.setOnClickListener {
+            requireActivity().onBackPressed()
+        }
         return binding.root
     }
 

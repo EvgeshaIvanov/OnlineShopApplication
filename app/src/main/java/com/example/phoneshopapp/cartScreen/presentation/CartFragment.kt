@@ -34,6 +34,9 @@ class CartFragment : Fragment() {
             binding.totalCost.text = "\$${items.total}"
             binding.deliveryInfo.text = items.delivery
         }
+        binding.backButton.setOnClickListener {
+            requireActivity().onBackPressed()
+        }
         return binding.root
     }
 

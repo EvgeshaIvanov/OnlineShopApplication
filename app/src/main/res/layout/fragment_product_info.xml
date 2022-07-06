@@ -12,7 +12,7 @@
         android:orientation="horizontal">
 
         <ImageButton
-            android:id="@+id/close_filter_button"
+            android:id="@+id/back_button"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_gravity="start|center"
@@ -281,7 +281,7 @@
                 android:layout_marginStart="16dp"
 
                 android:layout_marginEnd="16dp"
-
+                android:layout_marginBottom="8dp"
                 android:backgroundTint="@color/orange"
                 android:fontFamily="@font/mark_pro"
                 android:text="Add to Cart $1,500.00"
