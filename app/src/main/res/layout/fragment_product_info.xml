@@ -8,6 +8,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:orientation="horizontal">
 
         <ImageButton
@@ -15,7 +16,8 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_gravity="start|center"
-            android:layout_marginStart="44dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/custom_default_button"
             android:backgroundTint="@color/select_default_text_color"
             android:gravity="center"
             android:src="@drawable/back_arrow"
@@ -33,7 +35,8 @@
             android:gravity="center"
             android:text="@string/product_details"
             android:textColor="@color/select_default_text_color"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <ImageButton
             android:id="@+id/cart_button"
@@ -41,16 +44,22 @@
             android:layout_height="50dp"
             android:layout_gravity="start|center"
             android:layout_marginEnd="20dp"
+            android:background="@drawable/custom_default_button"
             android:backgroundTint="@color/orange"
             android:gravity="center"
             android:src="@drawable/shop_cart"
             android:textAllCaps="false"
             android:textSize="18sp" />
     </LinearLayout>
+
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/view_pager"
-        android:layout_width="wrap_content"
-        android:layout_height="250dp" />
+        android:layout_marginTop="8dp"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp" />
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
@@ -88,6 +97,7 @@
                     android:layout_height="40dp"
                     android:layout_gravity="end|bottom"
                     android:layout_marginEnd="20dp"
+                    android:background="@drawable/custom_default_button"
                     android:backgroundTint="@color/select_default_text_color"
                     android:src="@drawable/favorite_phone_button"
                     android:textAllCaps="false" />
@@ -101,8 +111,8 @@
                 android:layout_marginStart="16dp"
                 android:max="5"
                 android:rating="3.5"
-                android:scaleX=".5"
-                android:scaleY=".5"
+                android:scaleX=".4"
+                android:scaleY=".4"
                 android:transformPivotX="0dp"
                 android:transformPivotY="0dp" />
 
@@ -207,7 +217,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="28dp"
+                android:layout_marginTop="16dp"
                 android:fontFamily="@font/mark_pro"
                 android:text="Select color and capacity"
                 android:textColor="@color/select_default_text_color"
@@ -269,9 +279,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
+
                 android:layout_marginEnd="16dp"
-                android:layout_marginBottom="16dp"
+
                 android:backgroundTint="@color/orange"
                 android:fontFamily="@font/mark_pro"
                 android:text="Add to Cart $1,500.00"
