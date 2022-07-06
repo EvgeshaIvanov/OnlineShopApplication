@@ -25,15 +25,23 @@
         <entry key="..\:/Users/most1/AndroidStudioProjects/PhoneShopApp/app/src/main/res/layout/item_view_pager.xml" value="0.5" />
         <entry key="..\:/Users/most1/AndroidStudioProjects/PhoneShopApplication/app/src/main/res/drawable/accept_vector.xml" value="0.3135" />
         <entry key="..\:/Users/most1/AndroidStudioProjects/PhoneShopApplication/app/src/main/res/drawable/books_vector.xml" value="0.196" />
+        <entry key="..\:/Users/most1/AndroidStudioProjects/PhoneShopApplication/app/src/main/res/drawable/custom_connter_bar.xml" value="0.3135" />
+        <entry key="..\:/Users/most1/AndroidStudioProjects/PhoneShopApplication/app/src/main/res/drawable/custom_favorite_button.xml" value="0.3135" />
         <entry key="..\:/Users/most1/AndroidStudioProjects/PhoneShopApplication/app/src/main/res/drawable/detail_1.xml" value="0.3135" />
+        <entry key="..\:/Users/most1/AndroidStudioProjects/PhoneShopApplication/app/src/main/res/drawable/favorite_border.xml" value="0.3135" />
         <entry key="..\:/Users/most1/AndroidStudioProjects/PhoneShopApplication/app/src/main/res/drawable/favorite_vector.xml" value="0.3135" />
+        <entry key="..\:/Users/most1/AndroidStudioProjects/PhoneShopApplication/app/src/main/res/drawable/favotite.xml" value="0.1615" />
         <entry key="..\:/Users/most1/AndroidStudioProjects/PhoneShopApplication/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/most1/AndroidStudioProjects/PhoneShopApplication/app/src/main/res/layout/activity_main2.xml" value="0.25277777777777777" />
+        <entry key="..\:/Users/most1/AndroidStudioProjects/PhoneShopApplication/app/src/main/res/layout/fragment_best_seller.xml" value="0.25833333333333336" />
+        <entry key="..\:/Users/most1/AndroidStudioProjects/PhoneShopApplication/app/src/main/res/layout/fragment_blank.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/most1/AndroidStudioProjects/PhoneShopApplication/app/src/main/res/layout/fragment_cart.xml" value="0.33" />
         <entry key="..\:/Users/most1/AndroidStudioProjects/PhoneShopApplication/app/src/main/res/layout/fragment_filter_best_seller.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/most1/AndroidStudioProjects/PhoneShopApplication/app/src/main/res/layout/fragment_main_screen.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/most1/AndroidStudioProjects/PhoneShopApplication/app/src/main/res/layout/fragment_product_info.xml" value="0.5" />
-        <entry key="..\:/Users/most1/AndroidStudioProjects/PhoneShopApplication/app/src/main/res/layout/fragment_select_category.xml" value="0.18802083333333333" />
-        <entry key="..\:/Users/most1/AndroidStudioProjects/PhoneShopApplication/app/src/main/res/layout/item_best_seller.xml" value="0.25833333333333336" />
+        <entry key="..\:/Users/most1/AndroidStudioProjects/PhoneShopApplication/app/src/main/res/layout/fragment_select_category.xml" value="0.33" />
+        <entry key="..\:/Users/most1/AndroidStudioProjects/PhoneShopApplication/app/src/main/res/layout/item_best_seller.xml" value="0.75" />
+        <entry key="..\:/Users/most1/AndroidStudioProjects/PhoneShopApplication/app/src/main/res/layout/item_cart.xml" value="0.5" />
         <entry key="..\:/Users/most1/AndroidStudioProjects/PhoneShopApplication/app/src/main/res/layout/item_product_details_view_pager.xml" value="0.36666666666666664" />
       </map>
     </option>

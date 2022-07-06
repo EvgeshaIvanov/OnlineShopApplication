@@ -3,8 +3,8 @@ package com.example.phoneshopapp.productInfo.presentation
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.phoneshopapp.productInfo.domain.usecase.GetPhoneUseCase
 import com.example.phoneshopapp.productInfo.data.RepositoryImpl
+import com.example.phoneshopapp.productInfo.domain.usecase.GetPhoneUseCase
 import kotlinx.coroutines.launch
 
 class ProductViewModel : ViewModel() {

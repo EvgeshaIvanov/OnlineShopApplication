@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/gray"
-    android:id="@+id/scroll_view"
     android:orientation="vertical"
-    tools:context=".MainScreenFragment">
+    tools:context=".mainScreen.presentation.MainScreenFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:background="@color/gray"
         android:orientation="vertical">
 
@@ -19,9 +19,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
             android:clickable="true"
-            android:layout_marginTop="8dp"
             android:focusable="true"
             android:src="@drawable/filter_vector" />
 
@@ -38,12 +38,15 @@
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/container_horizontal_menu"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
             android:fontFamily="@font/mark_pro"
             android:text="@string/hot_sales"
             android:textColor="@color/select_default_text_color"
@@ -53,9 +56,11 @@
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/container_hot_sales"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
 
         <androidx.fragment.app.FragmentContainerView
+            android:layout_marginTop="8dp"
             android:id="@+id/container_best_sellers"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />

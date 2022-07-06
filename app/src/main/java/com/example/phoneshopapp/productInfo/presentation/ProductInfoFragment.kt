@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
+import com.example.phoneshopapp.R
 import com.example.phoneshopapp.databinding.FragmentProductInfoBinding
 
 class ProductInfoFragment : Fragment() {
@@ -27,6 +29,9 @@ class ProductInfoFragment : Fragment() {
         productViewModel.getPhoneInfo()
         productViewModel.phoneInfo.observe(viewLifecycleOwner) { images ->
             adapter.list = images
+        }
+        binding.cartButton.setOnClickListener {
+            findNavController().navigate(R.id.action_productInfoFragment_to_cartFragment)
         }
 
         return binding.root
