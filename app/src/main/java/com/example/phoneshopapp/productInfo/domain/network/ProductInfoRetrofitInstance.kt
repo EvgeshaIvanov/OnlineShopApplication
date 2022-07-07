@@ -3,7 +3,7 @@ package com.example.phoneshopapp.productInfo.domain.network
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-object RetrofitInstance {
+object ProductInfoRetrofitInstance {
 
     private const val BASE_URL = " https://run.mocky.io/v3/"
 
@@ -17,4 +17,5 @@ object RetrofitInstance {
         retrofit.create(ApiServiceProductInfo::class.java)
     }
 
+    val apiHelper = ProductInfoApiHelper(api)
 }

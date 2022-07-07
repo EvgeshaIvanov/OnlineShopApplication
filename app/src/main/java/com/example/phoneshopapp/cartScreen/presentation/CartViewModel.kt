@@ -3,8 +3,8 @@ package com.example.phoneshopapp.cartScreen.presentation
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.phoneshopapp.cartScreen.data.CartRepositoryImpl
-import com.example.phoneshopapp.cartScreen.domain.model.ResponseCartModel
+import com.example.phoneshopapp.cartScreen.data.repository.CartRepositoryImpl
+import com.example.phoneshopapp.cartScreen.data.model.ResponseCartModel
 import com.example.phoneshopapp.cartScreen.domain.usecase.GetCartUseCase
 import kotlinx.coroutines.launch
 

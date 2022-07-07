@@ -1,5 +1,6 @@
-package com.example.phoneshopapp.cartScreen.domain.model
+package com.example.phoneshopapp.cartScreen.data.model
 
+import com.example.phoneshopapp.cartScreen.domain.model.BasketModel
 import com.google.gson.annotations.SerializedName
 
 data class ResponseCartModel(

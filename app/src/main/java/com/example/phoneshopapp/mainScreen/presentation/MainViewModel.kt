@@ -3,7 +3,7 @@ package com.example.phoneshopapp.mainScreen.presentation
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.phoneshopapp.mainScreen.data.PhoneRepositoryImpl
+import com.example.phoneshopapp.mainScreen.data.repository.PhoneRepositoryImpl
 import com.example.phoneshopapp.mainScreen.domain.models.BestSellerModel
 import com.example.phoneshopapp.mainScreen.domain.models.HotSalesModel
 import com.example.phoneshopapp.mainScreen.domain.usecase.BestSellerUseCase

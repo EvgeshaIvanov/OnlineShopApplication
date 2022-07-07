@@ -16,4 +16,6 @@ object CartRetrofitInstance {
     val api: CartApiService by lazy {
         retrofit.create(CartApiService::class.java)
     }
+
+    val apiHelper = CartApiHelper(api)
 }
