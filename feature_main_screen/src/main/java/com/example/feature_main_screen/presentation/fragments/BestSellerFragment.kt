@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
@@ -12,6 +13,7 @@ import com.example.feature_main_screen.R
 import com.example.feature_main_screen.databinding.FragmentBestSellerBinding
 import com.example.feature_main_screen.presentation.MainViewModel
 import com.example.feature_main_screen.presentation.adapter.bestSeller.BestSellerAdapter
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 
 class BestSellerFragment : Fragment() {
@@ -19,8 +21,9 @@ class BestSellerFragment : Fragment() {
     private lateinit var binding: FragmentBestSellerBinding
 
     private lateinit var phoneAdapter: BestSellerAdapter
-
-    private lateinit var viewModel: MainViewModel
+//
+    private val viewModel by viewModel<MainViewModel>()
+//    private lateinit var viewModel: MainViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -33,7 +36,7 @@ class BestSellerFragment : Fragment() {
     }
 
     private fun initViewModel() {
-        viewModel = ViewModelProvider(this)[MainViewModel::class.java]
+//        viewModel = ViewModelProvider(this)[MainViewModel::class.java]
         viewModel.bestSellerPhones.observe(viewLifecycleOwner) { phones ->
             phoneAdapter.list = phones
         }

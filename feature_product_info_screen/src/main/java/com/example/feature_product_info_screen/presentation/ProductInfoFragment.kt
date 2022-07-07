@@ -11,10 +11,11 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.feature_product_info_screen.R
 import com.example.feature_product_info_screen.databinding.FragmentProductInfoBinding
 import com.example.feature_product_info_screen.presentation.adapter.ProductInfoViewPager
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class ProductInfoFragment : Fragment() {
 
-    private lateinit var productViewModel: ProductViewModel
+    private val productViewModel by viewModel<ProductViewModel>()
 
     private lateinit var adapter: ProductInfoViewPager
 
@@ -26,7 +27,7 @@ class ProductInfoFragment : Fragment() {
     ): View {
         binding = FragmentProductInfoBinding.inflate(inflater, container, false)
         initViewPager()
-        productViewModel = ViewModelProvider(this)[ProductViewModel::class.java]
+//        productViewModel = ViewModelProvider(this)[ProductViewModel::class.java]
         productViewModel.getPhoneInfo()
         productViewModel.phoneInfo.observe(viewLifecycleOwner) { images ->
             adapter.list = images

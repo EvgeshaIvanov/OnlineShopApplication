@@ -5,7 +5,7 @@ import com.example.feature_main_screen.domain.models.HotSalesModel
 import com.example.feature_main_screen.domain.network.RetrofitInstance
 import com.example.feature_main_screen.domain.repository.Repository
 
-class PhoneRepositoryImpl : Repository {
+class RepositoryImpl : Repository {
 
     override suspend fun hotSalesPhones(): List<HotSalesModel> {
         val response = RetrofitInstance.apiHelper.getPhonesHotSales()

@@ -10,6 +10,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.feature_main_screen.R
 import com.example.feature_main_screen.databinding.FragmentFilterBestSellerBinding
 import com.example.feature_main_screen.presentation.MainViewModel
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class FilterBestSellerFragment : Fragment() {
 
