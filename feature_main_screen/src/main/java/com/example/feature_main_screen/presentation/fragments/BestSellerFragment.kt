@@ -21,9 +21,9 @@ class BestSellerFragment : Fragment() {
     private lateinit var binding: FragmentBestSellerBinding
 
     private lateinit var phoneAdapter: BestSellerAdapter
-//
+
     private val viewModel by viewModel<MainViewModel>()
-//    private lateinit var viewModel: MainViewModel
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -36,7 +36,7 @@ class BestSellerFragment : Fragment() {
     }
 
     private fun initViewModel() {
-//        viewModel = ViewModelProvider(this)[MainViewModel::class.java]
+
         viewModel.bestSellerPhones.observe(viewLifecycleOwner) { phones ->
             phoneAdapter.list = phones
         }

@@ -5,8 +5,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.viewModels
-import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.feature_cart_screen.databinding.FragmentCartBinding
 import com.example.feature_cart_screen.presentation.adapter.CartAdapter
@@ -31,7 +29,7 @@ class CartFragment : Fragment() {
             layoutManager = LinearLayoutManager(context)
             adapter = cartAdapter
         }
-//        viewModel = ViewModelProvider(this)[CartViewModel::class.java]
+
         viewModel.cartInfoList.observe(viewLifecycleOwner) { items ->
             cartAdapter.cartList = items.basket
             binding.totalCost.text = "\$${items.total}"

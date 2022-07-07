@@ -1,10 +1,9 @@
-package com.example.feature_main_screen.presentation
+package com.example.phoneshopapp
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
-import com.example.feature_main_screen.R
-import com.example.feature_main_screen.databinding.ActivityMainBinding
+import com.example.phoneshopapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
