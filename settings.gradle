@@ -14,3 +14,8 @@ dependencyResolutionManagement {
 }
 rootProject.name = "PhoneShopApp"
 include ':app'
+include ':core'
+include ':feature_main_screen'
+include ':feature_product_info_screen'
+include ':feature_cart_screen'
+

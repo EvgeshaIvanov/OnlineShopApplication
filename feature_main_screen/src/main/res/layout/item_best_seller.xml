@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_phone"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="8dp"
+    android:backgroundTint="@color/white"
+    android:orientation="vertical"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="0dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="187dp"
+            android:layout_height="168dp">
+
+            <ImageView
+                android:id="@+id/best_seller_image"
+                android:layout_width="187dp"
+                android:layout_height="168dp"
+                android:src="@drawable/ic_launcher_foreground" />
+
+            <ImageButton
+                android:id="@+id/add_to_favorite_button"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/custom_favorite_button"
+                android:elevation="10dp"
+                android:src="@drawable/favorite_border" />
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/discount_price"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="21dp"
+                android:text="@string/discountPrice"
+                android:textColor="@color/select_default_text_color"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/price_without_discount"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:text="@string/discountPrice"
+                android:textColor="@color/dark_gray"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/phone_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/phone_name"
+                android:textColor="@color/select_default_text_color"
+                android:textSize="11sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
