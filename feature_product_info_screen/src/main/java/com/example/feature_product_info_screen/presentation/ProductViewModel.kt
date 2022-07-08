@@ -3,7 +3,7 @@ package com.example.feature_product_info_screen.presentation
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.feature_product_info_screen.data.RepositoryImpl
+import com.example.feature_product_info_screen.data.repository.RepositoryImpl
 import com.example.feature_product_info_screen.domain.usecase.GetPhoneUseCase
 import kotlinx.coroutines.launch
 

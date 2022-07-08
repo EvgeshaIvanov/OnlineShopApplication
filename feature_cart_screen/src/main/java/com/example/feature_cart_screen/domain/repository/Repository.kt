@@ -1,8 +1,9 @@
 package com.example.feature_cart_screen.domain.repository
 
-import com.example.feature_cart_screen.data.model.ResponseCartModel
+import com.example.feature_cart_screen.domain.model.BasketMainModel
 
 interface Repository {
 
-    suspend fun getCartInfo(): ResponseCartModel
+    suspend fun getCartInfo(): BasketMainModel
+
 }

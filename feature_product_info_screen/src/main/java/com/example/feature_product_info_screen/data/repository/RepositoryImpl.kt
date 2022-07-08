@@ -1,6 +1,6 @@
-package com.example.feature_product_info_screen.data
+package com.example.feature_product_info_screen.data.repository
 
-import com.example.feature_product_info_screen.domain.network.RetrofitInstance
+import com.example.feature_product_info_screen.data.network.RetrofitInstance
 import com.example.feature_product_info_screen.domain.repository.Repository
 
 class RepositoryImpl : Repository {
@@ -13,7 +13,7 @@ class RepositoryImpl : Repository {
         if (!response.isSuccessful) {
             return emptyList()
         }
-        return response.body.images
+        return response.body.mapToProductModel().images
     }
 
 }

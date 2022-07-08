@@ -1,4 +1,4 @@
-package com.example.feature_main_screen.domain.network
+package com.example.feature_main_screen.data.network
 
 import com.example.phoneshopapp.utils.Constants.BASE_URL
 import retrofit2.Retrofit

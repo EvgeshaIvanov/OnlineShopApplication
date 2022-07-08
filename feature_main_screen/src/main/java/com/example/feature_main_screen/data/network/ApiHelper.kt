@@ -1,4 +1,4 @@
-package com.example.feature_main_screen.domain.network
+package com.example.feature_main_screen.data.network
 
 import com.example.feature_main_screen.data.model.ResponseModel
 import com.example.phoneshopapp.utils.BaseDataSource

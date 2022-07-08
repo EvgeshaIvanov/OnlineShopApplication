@@ -1,4 +1,4 @@
-package com.example.feature_product_info_screen.domain.network
+package com.example.feature_cart_screen.data.network
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
